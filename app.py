@@ -7,7 +7,7 @@ import io
 
 
 # LINK TO THE CSS FILE
-with open(r"C:\Users\Rishitha Reddy\OneDrive\Desktop\Brain_Tumor\style.css")as f:
+with open("style.css")as f:
  st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
 
@@ -31,7 +31,7 @@ add_bg_from_url()
 
 # @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model(r'C:\Users\Rishitha Reddy\OneDrive\Desktop\Brain_Tumor\models\model_cnn.h5')
+  model=tf.keras.models.load_model("/models/model_cnn.h5")
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
