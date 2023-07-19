@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
-import io
+#import io
 
 
 # LINK TO THE CSS FILE
